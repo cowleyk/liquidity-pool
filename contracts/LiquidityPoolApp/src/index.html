@@ -1,0 +1,44 @@
+<title>Sample Project</title>
+<link rel="stylesheet" type="text/css" href="./index.css">
+
+<h1>Project LP</h1>
+
+<section>
+  <h2>Pool</h2>
+
+  <form id="lp_deposit">
+    Deposit for LP tokens <br>
+    <input name="eth" value="0" autocomplete="off"> ETH<br>
+    <input name="spc" value="0" autocomplete="off"> SPC<br>
+    <button type="submit">Deposit</button>
+  </form>
+
+  <form id="lp_withdraw">
+    Withdraw from pool <br>
+    <button type="submit">Withdraw All</button>
+  </form>
+</section>
+
+<section>
+  <h2>Trade</h2>
+
+  <form id="swap">
+    Trade SPC for ETH <br>
+    <input name="amount_in" id="amount_in_input" value="0" autocomplete="off"> <span id="swap_in_label">ETH</span>
+    <small id="switcher" style="text-decoration: underline; cursor: pointer;">swap</small>
+    <br>
+    <br>
+    <button id="estimate">Estimate</button>
+    <span id="swap_out_label">0 SPC</span>
+    <br>
+    <br>
+    <label for="slippage">Max slippage</label>
+    <br>
+    <input name="slippage" id="slippage_input" value="0" autocomplete="off"> <span id="swap_in_label">%</span>
+    <br>
+    <br>
+    <button type="submit">Trade</button>
+  </form>
+</section>
+
+<script type="module" src="./index.js"></script>
